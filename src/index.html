@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./assets/index.js" defer></script>
     <title>SpontiChef</title>
   </head>
 
@@ -99,64 +100,8 @@
         <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">
           Discover your new favorite dish
         </h2>
-        <div class="mt-6 grid grid-cols-1 gap-y-10">
+        <div class="mt-6 grid grid-cols-1 gap-y-10" id="content">
           <!-- content -->
-          <div class="lg:flex rounded-lg overflow-hidden">
-            <div class="w-full flex flex-col gap-y-2 lg:w-2/5">
-              <img
-                src="./assets/img/woman-cooking.jpg"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="w-full flex flex-col gap-y-3 p-3 border-2 lg:w-3/5">
-              <h3 class="text-xl font-bold text-gray-700">
-                Ramen Noodle Coleslaw
-              </h3>
-              <ul class="flex gap-x-4 gap-y-2 text-sm flex-wrap">
-                <li class="flex gap-x-1">
-                  <img src="./assets/img/time.svg" alt="time" />15 minutes
-                </li>
-                <li class="flex gap-x-1">
-                  <img src="./assets/img/servings.svg" alt="servings" />8
-                  servings
-                </li>
-                <li class="flex gap-x-1">
-                  <img src="./assets/img/heart.svg" alt="likes" />56 likes
-                </li>
-              </ul>
-              <ul class="grid text-sm py-2 md:grid-cols-2">
-                <li>¼ cup sliced almonds</li>
-                <li>1 bag shredded cabbage/coleslaw mix</li>
-                <li>1 package chicken flavor ramen noodle soup</li>
-                <li>5 green onions, chopped</li>
-                <li>2 tablespoons olive oil</li>
-                <li>½ teaspoon pepper</li>
-                <li>½ teaspoon salt</li>
-                <li>3 tablespoon sesame seeds</li>
-                <li>3 tablespoon sugar</li>
-                <li>3 tablespoon vinegar</li>
-              </ul>
-              <p>
-                "Toast the sesame seeds, about 350 degrees in the oven for about
-                10-15 minutes. Keep an eye on them to make sure they don't
-                burn.Mix together the following to make the dressing: olive oil,
-                vinegar, sugar, salt, pepper, green onions, chicken flavor
-                packet from the ramen noodle package.Crush the ramen noodles
-                until there are no large chunks (small chunks are OK).Combine
-                the shredded cabbage and ramen noodles in a large bowl.Pour the
-                dressing on the cabbage/noodle mixture and toss to coat.Top with
-                the toasted sesame seeds and almonds."
-              </p>
-              <p class="text-xs italic text-gray-400">
-                Source:
-                <a
-                  href="http://www.dizzybusyandhungry.com/ramen-noodle-coleslaw/"
-                  >Dizzy Busy and Hungry</a
-                >
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
