@@ -4,7 +4,7 @@ const URL_API =
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": process.env.API_KEY,
+    "X-RapidAPI-Key": import.meta.env.VITE_API_KEY,
     "X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
   },
 };
@@ -34,18 +34,18 @@ const container = document.querySelector("#content");
         </h3>
         <ul class="flex gap-x-4 gap-y-2 text-sm flex-wrap">
           <li class="flex gap-x-1">
-            <img src="./assets/img/time.svg" alt="time" />${
+            <img src="./src/img/time.svg" alt="time" />${
               recipe.readyInMinutes
             } minutes
           </li>
           <li class="flex gap-x-1">
-            <img src="./assets/img/servings.svg" alt="servings" />${
+            <img src="./src/img/servings.svg" alt="servings" />${
               recipe.servings
             }
             servings
           </li>
           <li class="flex gap-x-1">
-            <img src="./assets/img/heart.svg" alt="likes" />${
+            <img src="./src/img/heart.svg" alt="likes" />${
               recipe.aggregateLikes
             } likes
           </li>
