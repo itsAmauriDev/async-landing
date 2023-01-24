@@ -1,4 +1,8 @@
 import "./index.css";
+import heartIcon from "./../img/heart.svg";
+import sadFaceIcon from "./../img/sad-face.svg";
+import servingsIcon from "./../img/servings.svg";
+import timeIcon from "./../img/time.svg";
 
 const URL_API =
   "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random";
@@ -36,20 +40,14 @@ const container = document.querySelector("#content");
         </h3>
         <ul class="flex gap-x-4 gap-y-2 text-sm flex-wrap">
           <li class="flex gap-x-1">
-            <img src="./src/img/time.svg" alt="time" />${
-              recipe.readyInMinutes
-            } minutes
+            <img src="${timeIcon}" alt="time" />${recipe.readyInMinutes} minutes
           </li>
           <li class="flex gap-x-1">
-            <img src="./src/img/servings.svg" alt="servings" />${
-              recipe.servings
-            }
+            <img src="${servingsIcon}" alt="servings" />${recipe.servings}
             servings
           </li>
           <li class="flex gap-x-1">
-            <img src="./src/img/heart.svg" alt="likes" />${
-              recipe.aggregateLikes
-            } likes
+            <img src="${heartIcon}" alt="likes" />${recipe.aggregateLikes} likes
           </li>
         </ul>
         <ul class="grid text-sm py-2 md:grid-cols-2">
@@ -83,7 +81,7 @@ const container = document.querySelector("#content");
       <p>Ooops! Sorry an error ocurred</p>
       <img
         class="w=full h-28"
-        src="./src/img/sad-face.svg"
+        src="${sadFaceIcon}"
         alt="sad face"
       />
       <p>Try again later</p>
