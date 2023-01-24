@@ -1,3 +1,5 @@
+import "./index.css";
+
 const URL_API =
   "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random";
 
@@ -81,7 +83,7 @@ const container = document.querySelector("#content");
       <p>Ooops! Sorry an error ocurred</p>
       <img
         class="w=full h-28"
-        src="./assets/img/sad-face.svg"
+        src="./src/img/sad-face.svg"
         alt="sad face"
       />
       <p>Try again later</p>
